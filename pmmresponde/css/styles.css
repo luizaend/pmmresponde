@@ -226,6 +226,10 @@ footer span{
     display: none;
 }
 
+menu{
+    display:none
+}
+
 /*Responsividade*/
 @media(max-width:900px){ 
 
