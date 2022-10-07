@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+   overflow-x: hidden;
+   min-width: 100vw;
+   min-height: 100vh;
+}
+
+header{
+    height: auto;
+    width: auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+
+    
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #6277FF;
+    ;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.left-side{
+    width: 60%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.left-side .container-search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side h1, h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-side h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.left-side h3{
+    font-size: 27px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.left-side .container-topics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side figure {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.left-side form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left-side form{
+    width: 70%;
+}
+
+.left-side form input{
+    border-radius: 30px;
+    border: 3px solid #6277FF;
+    width: 100%;
+    height: 57px;
+}
+
+.left-side button{
+    font-size: 30px;
+    border: 3px solid #6277FF;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: -2.7rem;
+    height: 57px;
+    width: 8%;
+    background-color: #fff;
+    color: #6277FF;
+    transition: all ease 0.6s;
+}
+
+.left-side button:hover{
+    background-color: #eee;
+
+}
+
+
+.bg{
+    z-index: 1;
+    position: absolute;
+}
+
+.right-side{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .right-side .logo{
+ 
+    margin-bottom: 300px;
+    z-index: 6;
+    display: flex;
+    
+
+} */
+
+footer{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-left: -40px;
+    margin-top: -40px;
+    
+}
+
+footer span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#h1-redes{
+    color: #6277FF;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+
+.figure-redes{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+
+/*o que é*/
+
+.box-what{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    padding-right: 70px;
+}
+
+
+.box-what h1{
+    color: #6277FF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+
+.box-what p{
+    font-size: 17px;
+    line-height: 30px;
+    
+}
+
+.burguer{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+/*Responsividade*/
+@media(max-width:900px){ 
+
+    .closeMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10%;
+        position: absolute; /*Deixando posição absoluta, ou seja por cima de tudo.*/
+        left: 10%;
+        color: #fff;
+        font-size: 2.5rem;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        cursor: pointer;
+    }
+
+    menu{
+      position: fixed; /*Deixando posição fixa, fica presa na tela mesmo se fazer a rolagem no site*/
+      display: none;
+      width: 100%;
+      background-color:#6277fff8;
+      height: 100vh;
+    }
+
+    menu ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    menu ul li{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 3rem;
+        margin-top: 2rem;
+    }
+
+    menu ul li a{
+        text-decoration: none;
+        color: #fff;
+        height: 4rem;
+        font-size: 1.5rem;
+        margin-top: 1.6rem;
+    }
+
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        display: none;
+    }
+    .bg{
+        display: none;
+    }
+    
+    .nav, ul{
+        flex-direction: column;
+        align-items: unset;
+    }
+    ul{
+    display: none;
+    }
+
+    .burguer{
+        cursor: pointer;
+        display: flex;
+        color: #6277FF;
+    }
+
+    .container-search h1{
+        max-width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .left-side form button{
+            width: 6rem;
+    }
+
+    .line-figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    footer address{
+        width: 80%;
+    }
+
+    .sociais-responsivas{
+       justify-content: space-evenly !important;
+       width: 84% !important;
+    }
+
+    .sociais-responsivas img {
+        width: 55px;
+    }
+}

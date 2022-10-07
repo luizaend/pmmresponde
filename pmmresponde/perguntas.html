@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Utilizando javascript para fazer as ações de abrir e fechar meno responsivo   -->
+  <script>
+    function closeMenu(){
+        document.querySelector('.menu-mobile').style.display = 'none'; // função de fechar menu
+    }
+
+    function openMenu() {
+        document.querySelector('.menu-mobile').style.display = 'flex'; //função de abrir menu
+    }
+</script>
+
+<menu class="menu-mobile">
+    <ul>
+
+        <div onclick="closeMenu()" class="closeMenu"> <!-- Aplicando a função "closeMenu()" no botao X -->
+            <span>X</span>
+        </div>
+
+        <li><a href="./index.html">INÍCIO</a></li>
+        <li><a href="./perguntas.html">PERGUNTAS</a></li>
+        <li><a href="./redes.html">REDES SOCIAIS</a></li>
+        <li><a href="./what.html">O QUE É?</a></li>
+    </ul>
+</menu>
+
+<header>
+   <div class="menu">
+       <div class="menu-items">
+        <nav>
+            <button class="burguer" onclick="openMenu()">&#9776;</button> <!-- Aplicando a função "openMenu()" no hamburguer -->
+            <ul>
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./perguntas.html">PERGUNTAS</a></li>
+                <li><a href="./redes.html">REDES SOCIAIS</a></li>
+                <li><a href="./what.html">O QUE É?</a></li>
+            </ul>
+           </nav>
+       </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é?</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+</head>
+<body>
+    <body>
+  
+
+        <!-- Utilizando javascript para fazer as ações de abrir e fechar meno responsivo   -->
+        <script>
+            function closeMenu(){
+                document.querySelector('.menu-mobile').style.display = 'none'; // função de fechar menu
+            }
+    
+            function openMenu() {
+                document.querySelector('.menu-mobile').style.display = 'flex'; //função de abrir menu
+            }
+        </script>
+    
+        <menu class="menu-mobile">
+            <ul>
+    
+                <div onclick="closeMenu()" class="closeMenu"> <!-- Aplicando a função "closeMenu()" no botao X -->
+                    <span>X</span>
+                </div>
+    
+                <li><a href="./index.html">INÍCIO</a></li>
+                <li><a href="./perguntas.html">PERGUNTAS</a></li>
+                <li><a href="./redes.html">REDES SOCIAIS</a></li>
+                <li><a href="./what.html">O QUE É?</a></li>
+            </ul>
+        </menu>
+    
+       <header>
+           <div class="menu">
+               <div class="menu-items">
+                <nav>
+                    <button class="burguer" onclick="openMenu()">&#9776;</button> <!-- Aplicando a função "openMenu()" no hamburguer -->
+                    <ul>
+                        <li><a href="./index.html">INÍCIO</a></li>
+                        <li><a href="./perguntas.html">PERGUNTAS</a></li>
+                        <li><a href="./redes.html">REDES SOCIAIS</a></li>
+                        <li><a href="./what.html">O QUE É?</a></li>
+                    </ul>
+                   </nav>
+               </div>
+            </div>
+            </header>
+    <main>
+        <section class="left-side">
+            <section class="box-what">
+                <h1>O QUE É?</h1>
+                <p>A gente sabe que em plena era da internet e do smartphone na <br> palma da mão, todo mundo quer respostas para ontem. Visando <br> melhor atender nossos munícipes, criamos o <strong>MESQUITA RESPONDE</strong>! <br> Um sistema que reúne as perguntas mais frequentes <br> feitas por nossos moradores em um só lugar. Aqui você pode <br> simplesmente pesquisar por sua dúvida na página de  <strong>INÍCIO</strong> com <br> apenas uma palavra e encontrar a resposta que estava <br> procurando em menos de um minuto. Caso não encontre, ainda <br> estamos disponíveis em nossas redes sociais para tirar suas dúvidas!</p>
+                <section class=""></section>
+            </section>
+            
+        </section>
+        <section class="right-side">
+
+    
+            <img class="bg" src="./assets/bg.png" alt="">
+
+        </section>
+    </main>
+    <footer>
+        <address>
+            © 2019 | Todos os Direitos Reservados | PMM - Prefeitura Municipal de Mesquita | RJ | CNPJ: 04.132.090/0001-25 <br> <br>
+        </address>
+        <span> <strong>Desenvolvimento: </strong> <br>
+            CCS - Coordenadoria de Comunicação Social</span>
+    </footer>
+</body>
+</html>
